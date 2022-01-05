@@ -1,5 +1,13 @@
-.services{
-  background-image: url("./Images/Renovation.jpg");
-  background-color: aliceblue;
-  height: 100%;
-}
+
+          /* Default height for small devices */
+          #intro-example {
+            height: 400px;
+          }
+      
+          /* Height for devices larger than 992px */
+          @media (min-width: 992px) {
+            #intro-example {
+              height: 600px;
+            }
+          }
+    
