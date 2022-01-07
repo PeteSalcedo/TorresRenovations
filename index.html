@@ -1,81 +1,173 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Torres Renovation</title>
-    <meta name="description" content="This is an example of a meta description." />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<link rel="stylesheet" href="style.css">
+    <meta
+      name="description"
+      content="This is an example of a meta description."
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
 
-<body>
+  <body>
     <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="Images/Logo.png" alt="..." height="50">
-                  </a>
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarExample01">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar -->
-
-        <!-- Background image -->
-        <div id="intro-example" class="p-5 text-center bg-image"
-            style="background-image: url('Images/Renovation.jpg'); height: 80vh;">
-            <div class="fixed-bottom row align-items-end bg-dark" >
-            <div class="card-group bg-dark" style=" width:100%;" >
-                
-                <div class="card">
-                  <img src="Images/paint-bucket.svg" class="card-img-top" height="80vh" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Painting</h5>
-                    <p class="card-text">We are fast clean and reliable painters for beautiful home renovations.</p>
-                  </div>
-                </div>
-                <div class="card ">
-                  <img src="Images/putty-knife.png" class="card-img-top" style="margin:auto;width: 100px; height: 100px;" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Drywall Installation</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="Images/tile.png" class="card-img-top" style="margin:auto;width: 100px; height: 100px;" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Floor Tile</h5>
-                    <p class="card-text">Ceramic tile Installation for finishing touches as well as flooring projects with tiles.</p>
-                  </div>
-                </div>
-            </div>
-              </div>
-        </div>
-
-        <!-- Background image -->
+      <!-- Image and text -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="Images/LogoT.png" width="40" height="40" alt="" />
+          Torres Renovations
+        </a>
+      </nav>
     </header>
+    <section>
+      <!-- Background image -->
+      <div
+        id="intro-example"
+        class="p-4 text-center bg-image"
+        style="background-image: url('Images/Renovation.jpg'); height: 90vh"
+      >
+    
+          <div class="card-group" style="width: 100%; position: absolute;
+          bottom:25px;">
+            <div class="card">
+              <img
+                src="Images/paint-bucket.svg"
+                class="card-img-top"
+                height="80vh"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Painting</h5>
+                <p class="card-text">
+                  We are fast clean and reliable painters for beautiful home
+                  renovations.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="Images/putty-knife.png"
+                class="card-img-top"
+                style="margin: auto; width: 100px; height: 100px"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Drywall Installation</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="Images/tile.png"
+                class="card-img-top"
+                style="margin: auto; width: 100px; height: 100px"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Floor Tile</h5>
+                <p class="card-text">
+                  Ceramic tile Installation for finishing touches as well as
+                  flooring projects with tiles.
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
 
+      <!-- Background image -->
+    </section>
+    <section>
+      <div class="container py-4">
+        <!-- Bootstrap 5 starter form -->
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <!-- Name input -->
+          <div class="mb-3">
+            <label class="form-label" for="name">Name</label>
+            <input
+              class="form-control"
+              id="name"
+              type="text"
+              placeholder="Name"
+              data-sb-validations="required"
+            />
+            <div class="invalid-feedback" data-sb-feedback="name:required">
+              Name is required.
+            </div>
+          </div>
 
-</body>
+          <!-- Email address input -->
+          <div class="mb-3">
+            <label class="form-label" for="emailAddress">Email Address</label>
+            <input
+              class="form-control"
+              id="emailAddress"
+              type="email"
+              placeholder="Email Address"
+              data-sb-validations="required, email"
+            />
+            <div
+              class="invalid-feedback"
+              data-sb-feedback="emailAddress:required"
+            >
+              Email Address is required.
+            </div>
+            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">
+              Email Address Email is not valid.
+            </div>
+          </div>
 
+          <!-- Message input -->
+          <div class="mb-3">
+            <label class="form-label" for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              type="text"
+              placeholder="Message"
+              style="height: 10rem"
+              data-sb-validations="required"
+            ></textarea>
+            <div class="invalid-feedback" data-sb-feedback="message:required">
+              Message is required.
+            </div>
+          </div>
+
+          <!-- Form submissions success message -->
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">Form submission successful!</div>
+          </div>
+
+          <!-- Form submissions error message -->
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">
+              Error sending message!
+            </div>
+          </div>
+
+          <!-- Form submit button -->
+          <div class="d-grid">
+            <button
+              class="btn btn-primary btn-lg disabled"
+              id="submitButton"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- SB Forms JS -->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
 </html>
